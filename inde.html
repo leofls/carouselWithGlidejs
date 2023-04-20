@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel</title>
+
+    <!-- Carregar estilos do GlideJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #7e7e7e;
+        }
+        .container {
+            height: 100vh;
+            width: 100%;
+            max-width: 790px;
+            margin: auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .glide {
+            margin: auto;
+        }
+        .glide__slide{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="options-peek" class="glide">
+            
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                    <img src="https://picsum.photos/id/237/500/500" alt="">
+                </li>
+                <li class="glide__slide">
+                    <img src="https://picsum.photos/id/201/500/500" alt="">
+                </li>
+                <li class="glide__slide">
+                    <img src="https://picsum.photos/id/239/500/500" alt="">
+                </li>
+                <li class="glide__slide">
+                    <img src="https://picsum.photos/id/240/500/500" alt="">
+                </li>
+                <li class="glide__slide">
+                    <img src="https://picsum.photos/id/244/500/500" alt="">
+                </li>
+              </ul>
+            </div>
+
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"> < </button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"> > </button>
+              </div>
+        </div>
+    </div>
+
+    <!-- Carregar scripts do GlideJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
